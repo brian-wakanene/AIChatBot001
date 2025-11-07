@@ -36,6 +36,9 @@ if st.button("Clear Chat"):
     st.session_state.chat_history = ["start new chat"]
     st.success("Chat history cleared")
 
+#Initialize chat history
+if"chat_history" not in st.session_state:
+    st.session_state.chat_history = []
 
 #Display chat history
 
